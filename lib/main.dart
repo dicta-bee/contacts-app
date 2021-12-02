@@ -1,4 +1,4 @@
-import 'package:contact_app/Screens/homeview.dart';
+import 'package:contact_app/screens/homeview.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,6 +15,7 @@ class MyContactsApp extends StatelessWidget {
       title: 'contacts_app',
       theme: ThemeData(
         fontFamily: 'Nunito',
+        iconTheme: const IconThemeData(color: Color(0xFF060130)),
         appBarTheme: const AppBarTheme(
             backgroundColor: Colors.white,
             toolbarTextStyle: TextStyle(color: Colors.blue)),
