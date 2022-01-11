@@ -16,9 +16,9 @@ class ColumnWidget extends StatelessWidget {
         style: const TextStyle(fontFamily: 'Nunito'),
       ),
       subtitle: Text(contact.phone),
-      trailing: Icon(
+      trailing: const Icon(
         Icons.more_horiz,
-        color: Theme.of(context).iconTheme.color,
+        color: Colors.green,
       ),
     );
   }

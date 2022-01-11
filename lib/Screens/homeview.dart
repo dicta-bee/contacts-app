@@ -40,11 +40,12 @@ class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
-          title: Text(
+          title: const Text(
             'My Contacts',
             style: TextStyle(
-                color: Theme.of(context).appBarTheme.toolbarTextStyle!.color,
+                color: Colors.green,
                 fontSize: 25.0,
                 fontFamily: 'Nunito'),
           ),
@@ -53,7 +54,7 @@ class _HomeViewState extends State<HomeView> {
               padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
               child: CircleAvatar(
                 radius: 25,
-                backgroundImage: AssetImage('assets/jay.jpg'),
+                backgroundImage: AssetImage('assets/3.jpg'),
               ),
             )
           ],
@@ -64,12 +65,14 @@ class _HomeViewState extends State<HomeView> {
               padding: const EdgeInsets.symmetric(horizontal: 8.0),
               child: TextField(
                 decoration: InputDecoration(
-                    hintText: 'Search',
-                    prefixIcon: const Icon(Icons.search),
+                  filled: true,
+                  fillColor: Colors.green,
+                    hintText: 'Search by name or number',
+                    prefixIcon: const Icon(Icons.search, color: Colors.green),
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(15.0),
                         borderSide: const BorderSide(
-                            width: 2.0, color: Color(0xFFfadf8e)))),
+                            width: 2.0, color: Colors.green))),
               ),
             ),
           )),
@@ -78,7 +81,7 @@ class _HomeViewState extends State<HomeView> {
           padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 12.0),
           child: Text(
             'Recents',
-            style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+            style: TextStyle(color: Colors.green, fontSize: 18.0, fontWeight: FontWeight.bold),
           ),
         ),
         ListView.separated(
@@ -92,7 +95,7 @@ class _HomeViewState extends State<HomeView> {
                 const Padding(
                   padding: EdgeInsets.symmetric(horizontal: 20.0),
                   child: Divider(
-                    color: Colors.lightBlue,
+                    color: Colors.green,
                     thickness: 3.0,
                   ),
                 ),
@@ -101,7 +104,7 @@ class _HomeViewState extends State<HomeView> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: const Icon(Icons.add),
-        backgroundColor: const Color(0xFF060130),
+        backgroundColor: Colors.green,
       ),
     );
   }

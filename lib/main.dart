@@ -15,11 +15,11 @@ class MyContactsApp extends StatelessWidget {
       title: 'contacts_app',
       theme: ThemeData(
         fontFamily: 'Nunito',
-        iconTheme: const IconThemeData(color: Color(0xFF060130)),
+        iconTheme: const IconThemeData(color: Colors.green),
         appBarTheme: const AppBarTheme(
             backgroundColor: Colors.white,
-            toolbarTextStyle: TextStyle(color: Colors.blue)),
-        primaryColor: const Color.fromRGBO(142, 97, 232, 1),
+            toolbarTextStyle: TextStyle(color: Colors.green)),
+        primaryColor: Colors.green,
       ),
       home: const HomeView(),
     );
